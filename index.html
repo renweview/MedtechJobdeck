@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Medtech Jobdeck</title>
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+
+      </div>
+      <img src="images/heart.png" alt="heart" id="modal-image">
+    </div>
+
+  </div>
+
+  <nav class="topnav">
+    <ul>
+      <li><img src="images/icon.jpg" width="50px"></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><button id="theme-button">Toggle Dark Mode</button></li>
+
+    </ul>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header-container">
+    <div class="header-item">
+      <h1>Find your next Medtech role -- now faster and easier than ever.</h1>
+      <h4>Discover hundreds of job listings from 10,000+ companies at the intersection of medical innovation and
+        technology.</h4>
+    </div>
+    <div class="header-item">
+      <button type="button">
+        <img src="images/g-icon.png" width="20px" height="20px">
+        Sign up with Google </button>
+      <button>Sign up with Email</button>
+    </div>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <h1> You're at the right spot if you're searching for
+    <span class="txt-rotate" data-period="2000"
+      data-rotate='[ "a job.", "a mission you can believe in.", "an income.", "a learning opportunity.", "your next transition." ]'></span>
+  </h1>
+
+  </h1>
+
+  <!-- Main Content Section -->
+  <div class="content revealable">
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/oHg5SJYRHA0">
+    </iframe>
+    <h1>What is this page?</h1>
+    <p>The Medtech Jobdeck is designed to help technologists find tech jobs at medical and biotechnical companies. It
+      features a database of jobs, often handpicked for aspiring technologists to get their first role in medtech.
+      You’ll be able to search for roles based on location, experience-level, company size, date the role was posted,
+      among other things.
+    </p>
+
+    <img src="images/meteor.jpg" width="30px" height="30px">
+    <h1>Why should I use your site, hm?</h1>
+    <p> We scour the internet everyday for new job openings. Generally given this website is a jobs page, our intended
+      users would be most jobseekers. In the future I’d like to try to use a web scraper and make the jobs page open
+      source as well, with an
+      associated Discord and Github for folks to contribute towards and ask questions about certain roles or features
+      for the web page.</p>
+  </div>
+  <div class="petition revealable" id="petition">
+
+    <h2> Want to get updates? Sign our Petition and You'll be added to the Newsletter! 📢</h2>
+    <div class="petition-container">
+      <div class="petition-para">
+        The team at Medtech is dedicated to bringing you hand-picked opportunities straight to your inbox, along with
+        insider tips and career hacks to help you stand out from the crowd. Sign our Petition for equitable jobboards to
+        join our growing community of aspiring tech workers and watch your inbox transform into your launchpad to
+        success!
+
+        Petition Goals:
+        <ul>
+          <li>Supercharge Accessibility: Integrate screen reader compatibility, keyboard navigation, and multi-language
+            support to empower all job seekers.
+          </li>
+          <li> Champion Diverse and effective Hiring: Partner with diversity organizations and establish guidelines for
+            bias-free
+            job postings to cultivate a welcoming talent pool.
+          </li>
+          <li> Fuel Transparency: Track user demographics, encourage salary ranges in postings, and advocate for fair
+            hiring practices in the MedTech industry.</li>
+        </ul>
+        By signing this petition, you support our mission to bridge the gap between great workers and companies looking
+        for folks like you.
+      </div>
+
+      <div class="signatures">
+        <p>🖊️ Capn America from Brooklyn supports this.</p>
+        <p>🖊️ Peter P. from Queens supports this.</p>
+        <p>🖊️ Stan Lee from Harlem supports this.</p>
+      </div>
+    </div>
+    <br>
+    <!--- Sign Petition Form --->
+    <form id="sign-petition" title="sign-petition">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      <label for="hometown" id="hometown-label">Hometown:</label>
+      <input type="text" id="hometown" name="hometown" placeholder="Enter your hometown" required>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </form>
+
+    <!--- Sign Now Button --->
+    <button id="sign-now-button">Sign Up</button>
+
+  </div>
+  <!-- Footer Section -->
+  <footer>
+    <div id="title">
+      <img src="images/icon.jpg">
+      <h3>Medtech Job Deck</h3>
+    </div>
+    <ul>
+      <li><a href="#">For Employers</a></li>
+      <li><a href="#">For Jobseekers</a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--in order to link the Jobs html, css, js-- link the jobspage.html here, which would then call to the css and js pages from there  -->
+<!-- Will use google firebase or some backend to keep signed up users into a database that will be uploaded to a newsletter platform -->
